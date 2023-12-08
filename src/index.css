@@ -1,68 +1,93 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer components {
+  .hamburger {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    transition: all 0.25s;
+    position: relative;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: all 0.25s;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  
+.hamburger-top, 
+.hamburger-bottom, 
+.hamburger-middle{
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 25px;
+  border-radius: 10px;
+  transition: all 0.25s;
+  background: #000010;
+}
+
+
+.hamburger-top{
+  transform: translateY(5px);
+  width: 16px;
+  left: 0;
+
+}
+
+.hamburger-middle{
+  transform: translateY(12px);
+  width: 30px;
+  left: 0;
+}
+
+.hamburger-bottom{
+  transform: translateY(20px);
+  width: 15px;
+  right:0;
+}
+
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top{
+  width: 25px;
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle{
+  position: absolute;
+  left: -10000%;
+  @apply duration-500;
+}
+
+.open .hamburger-bottom{
+  width: 25px;
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+
+.logo {
+  font-family: 'Calligraffitti', cursive;
+}
+
+.link {
+  @apply w-2/3 tracking-wide h-12 hover:bg-white hover:text-redD text-center rounded-2xl flex justify-center items-center;
+}
+
+}
+
+.menu {
+  transform: scale(0);
+  transition: 0.25s ease-in;
+  z-index: 1000;
+} 
+
+.toggle {
+  transform: scale(1);
+  transition: all 0.25s ease-in;
 }
