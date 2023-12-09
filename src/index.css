@@ -4,13 +4,6 @@
 
 
 @layer components {
-/*   .hero {
-    background-image: url('./assets/img2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    @apply lg:bg-none
-  } */
   .hamburger {
     cursor: pointer;
     height: 25px;
@@ -87,7 +80,7 @@
 }
 
 .btn {
- @apply bg-transparent py-3 px-4 text-center w-52 h-20 rounded-lg inline text-silverR border border-DarkOrange hover:bg-DarkOrange hover:text-white;
+ @apply bg-transparent mt-10 py-4 px-7 text-center w-64 h-20 rounded-lg inline text-silverR border border-redD hover:bg-redD hover:text-white;
 }
 
 
@@ -103,3 +96,9 @@
   transform: scale(1);
   transition: all 0.25s ease-in;
 }
+
+.image-bg {
+    background-image: url('./assets/img2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  } 

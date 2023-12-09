@@ -2,6 +2,7 @@ import Herobg from '../../assets/img3.png'
 
 const About = () => {
   return (
+    <>
     <section id="about">
     <div className="flex flex-col sm:flex-row mt-16 px-4 pt-28 pb-5 sm:space-x-7 justify-between items-center">
       <article className="sm:w-1/2 relative bg-transparent py-9">
@@ -45,7 +46,8 @@ const About = () => {
       </div>
        
     </section>
-    
+    <hr className=" w-2/3 mx-auto bg-black my-10" />
+  </>
   )
 }
 

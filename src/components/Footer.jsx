@@ -30,15 +30,15 @@ const Footer = () => {
             Dancers4Life_club@gmail.com</a>
           
           <div className="flex items-center justify-center space-x-3">
-          <div className="text-xl py-3 px-4  bg-blue-500
+          <div className="text-xl py-3 px-4  
           text-white rounded-full h-10 w-10 flex items-center justify-center">
             <i className="fab fa-facebook-f"></i>  
           </div>
-          <div className="text-xl py-3 px-4  bg-blue-500
+          <div className="text-xl py-3 px-4  
           text-white rounded-full h-10 w-10 flex items-center justify-center">
             <i className="fab fa-twitter"></i>  
           </div>
-          <div className="text-xl py-3 px-4  bg-blue-500
+          <div className="text-xl py-3 px-4  
           text-white rounded-full h-10 w-10 flex items-center justify-center">
             <i className="fab fa-instagram"></i>  
           </div>
