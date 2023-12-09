@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         'silverR': '#c0c0c0',
-        'redD': '#ff0000',
-        'DarkOrange': '#ffa500',
+        'redD': '#dd0000',
+        'DarkOrange': '#ee6600',
       },
     },
   },

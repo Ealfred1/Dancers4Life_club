@@ -1,10 +1,11 @@
+import Hero from '../components/Homepage/Hero'
+import About from '../components/Homepage/About'
 
 const Homepage = () => {
   return (
-    <div className="text-5xl mt-20">Homepage
-    ndndnndndndnd
-    hdhdhdjd
-    jjdjd
+    <div className="max-w-5xl">
+      <Hero />
+      <About />
     </div>
   )
 }
