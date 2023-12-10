@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import classData from '../data/classData.json'
 import ClassBox from '../components/Classes/ClassBox'
@@ -7,13 +8,18 @@ import SalsaImg from '../assets/salsaDance.jpeg'
 import LineDanceImg from '../assets/lineDance.jpg'
 
 const Classespage = () => {
+  
+  useEffect(() => {
+    document.title = `Dancers4Life club | Dance Classes`
+  }, [])
+  
   return (
     <section id="classes" className="px-2 py-4">
-      <h2 className="text-4xl text-DarkOrange text-center font-bold underline-offset-0 mb-5">Dance Classes
+      <h2 className="text-4xl text-DarkOrange text-center font-bold underline-offset-0 mb-9">Dance Classes
       </h2>
       
       <p className="p tracking-wide pl-4">Dive into the world of Dance at Dancers4Life club. Choose from variety of classes including Ballroom, Salsa and more! Our experienced instructors will ensure you learn and grow with style so as to unleash your inner Dancer. </p>
-      <div className="flex flex-wrap flex-col sm:flex-row max-w-5xl items-center justify-center md:justify-around space-y-5 space-x-1 mt-5 px-3">
+      <div className="flex flex-wrap flex-col sm:flex-row max-w-5xl items-center justify-center md:justify-around space-y-5 space-x-1 mt-9 px-3">
          <ClassBox style='Ballroom'
                    image={BallImg}
                    description='Elegant and graceful, Ballroom dance classes emphasize posture, technique, and movement.' 

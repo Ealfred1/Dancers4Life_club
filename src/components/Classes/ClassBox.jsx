@@ -33,7 +33,7 @@ const ClassBox = ({ style, image, description, date, duration, price }) => {
          </div>
          
          <div className="flex justify-between px-4 w-full gap-6 mt-4">
-          <Link to={`/register?selectedDance=${encodeURIComponent(style)}&price=${encodeURIComponent(price)}`} className="bg-redD btn2">Register</Link>
+          <Link to={`/register?selectedDance=${encodeURIComponent(style)}&price=${encodeURIComponent(date)}`} className="bg-redD btn2">Register</Link>
           <Link to="/payment" className="btn2">Payment</Link>
          </div>
         </div>
