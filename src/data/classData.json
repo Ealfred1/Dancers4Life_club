@@ -1,0 +1,44 @@
+{
+  "classes": [
+    {
+      "style": "Ballroom",
+      "picture": "../assets/ballDance.jpg",
+      "description": "Elegant and graceful, Ballroom dance classes emphasize posture, technique, and movement.",
+      "startDate": "Tuesday, January 18, 2024 | 8:00 PM",
+      "duration": "1 hour/session",
+      "price": "$20/session",
+      "registration": true,
+      "payment": true
+    },
+    {
+      "style": "Hip-hop",
+      "picture": "hiphop.jpg",
+      "description": "High-energy and expressive, Hip-hop dance classes focus on rhythm, coordination, and freestyle moves.",
+      "startDate": "2024-01-20",
+      "duration": "1.5 hours/session",
+      "price": "$15/session",
+      "registration": true,
+      "payment": true
+    },
+    {
+      "style": "Salsa",
+      "picture": "salsa.jpg",
+      "description": "Passionate and rhythmic, Salsa dance classes teach fundamental steps and partner work.",
+      "startDate": "2024-01-18",
+      "duration": "1 hour/session",
+      "price": "$18/session",
+      "registration": true,
+      "payment": true
+    },
+    {
+      "style": "Line dancing",
+      "picture": "line_dancing.jpg",
+      "description": "Fun and social, Line dancing classes cover a variety of dance routines in group settings.",
+      "startDate": "2024-01-22",
+      "duration": "1 hour/session",
+      "price": "$12/session",
+      "registration": true,
+      "payment": true
+    }
+  ]
+}
