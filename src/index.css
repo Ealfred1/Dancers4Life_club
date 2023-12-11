@@ -13,7 +13,7 @@
     }
   
   .active {
-        @apply bg-redD text-white;
+        @apply bg-DarkOrange text-white;
   }
 
   .hamburger {
