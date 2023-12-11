@@ -44,6 +44,11 @@ const EventDetails = () => {
                       {event.venue}
                     </p>
                   </div>
+                  <div>
+                    <p className="p text-3xl font-extrabold">
+                      {event.price}
+                    </p>
+                  </div>
                 </div>
          
                 <Link className="w-full h-16 py-4 px-5 text-center bg-redD text-lg grid place-content-center text-white rounded-xl">Purchase Tickets</Link>

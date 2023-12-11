@@ -5,7 +5,8 @@
     "description": "Join us for an energetic and fun-filled hip-hop dance workshop where you'll learn the basics of hip-hop dance moves.",
     "date": "December 31, 2023",
     "venue": "Dance Studio A",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbj5EFcZKUC3ZTi082eHD4IIRj95UkUodR6vK_1HDTUCtuCuHbXDFbTKJ1QBjJ1h6mO9w&usqp=CAU"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbj5EFcZKUC3ZTi082eHD4IIRj95UkUodR6vK_1HDTUCtuCuHbXDFbTKJ1QBjJ1h6mO9w&usqp=CAU",
+    "price": "$20"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "description": "Experience a lively night of salsa dancing with live music and professional salsa dancers to guide you through the rhythm.",
     "date": "January 15, 2024",
     "venue": "Salsa Lounge",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15KMPR1mnFuWYXJ2RNUtMV7MOVV5KlcSWzg&usqp=CAU"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15KMPR1mnFuWYXJ2RNUtMV7MOVV5KlcSWzg&usqp=CAU",
+    "price": "$24"
   },
   {
     "id": 3,
@@ -21,6 +23,7 @@
     "description": "Learn the grace and elegance of ballroom dancing in this comprehensive masterclass led by renowned ballroom dance instructors.",
     "date": "February 20, 2024",
     "venue": "Grand Ballroom Hall",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRg6rYDtwktflTOSdNx8Ga6BjT3sqV9u6BMQ&usqp=CAU"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRg6rYDtwktflTOSdNx8Ga6BjT3sqV9u6BMQ&usqp=CAU",
+    "price": "$15"
   }
 ]
