@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
+import EventDetails from './components/Event/EventDetails'
 import Homepage from './pages/Homepage'
 import Classespage from './pages/Classespage'
 import EventsPage from './pages/EventsPage'
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path='/classes' element={<Classespage />} />
           <Route path='/events' element={<EventsPage />} />
+          <Route path="/events/:eventId" element={<EventDetails />} />
           <Route path='/register' element={<RegisterPage />} />
         </Route>
       </Routes>
