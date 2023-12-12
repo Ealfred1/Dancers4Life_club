@@ -21,7 +21,7 @@ const EventsPage = () => {
          <div className="flex flex-wrap flex-col sm:flex-row w-full items-center justify-center space-y-8 sm:justify-around mt-5 md:space-x-4">
             { eventData.map((event) => (
               
-              <div key={event.id} className="sm:w-[26rem] w-[27rem] h-auto shadow-md border border-transparent bg-white rounded-xl">
+              <div key={event.id} className="w-[26rem] h-auto shadow-md border border-transparent bg-white rounded-xl">
                 <img className="w-full rounded-t-xl h-64 object-cover" src={event.image} alt="" />
                 <div className="max-w-prose p-4 space-y-8 text-center flex
                 items-center flex-col">
