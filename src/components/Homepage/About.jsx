@@ -4,9 +4,9 @@ const About = () => {
   return (
     <>
     <section id="about">
-    <div className="flex flex-col sm:flex-row mt-16 px-4 pt-28 pb-5 sm:space-x-7 justify-between items-center">
+    <div className="flex flex-col sm:flex-row mt-8 px-4 pt-28 pb-5 sm:space-x-7 justify-between items-center">
       <article className="sm:w-1/2 relative bg-transparent py-9">
-       <h2 className="text-4xl text-DarkOrange text-center font-bold mt-32
+       <h2 className="text-4xl text-DarkOrange text-center font-bold
        underline-offset-0">About Dancers4Life Club </h2>
        <p className="max-w-md text-lg text-slate-600 text-center mt-8 font-semibold">
          We believe in the transformative power of dance!
