@@ -92,7 +92,7 @@
 }
 
 .link {
-  @apply w-[87.3%] text-gray-300 tracking-wide h-12 hover:bg-white hover:text-redD text-center rounded-2xl flex justify-center items-center;
+  @apply w-[87.3%] text-gray-300 tracking-wide h-14 hover:bg-white hover:text-redD text-center rounded-2xl flex justify-center items-center;
 }
 
 .btn {
@@ -152,4 +152,8 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+.flexW {
+  flex: 1 1 25rem;
 }

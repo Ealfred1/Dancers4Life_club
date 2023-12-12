@@ -1,8 +1,12 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
+  const location = useLocation()
+  const isActive = (path) => {
+    return location.pathname === path ? 'text-redD' : 'hover:text-redD'
+  }
   
   const handleToggle = () => {
     setOpen(!open)
@@ -23,15 +27,15 @@ const Navbar = () => {
           </div>
       
           <nav className="hidden sm:block space-x-8 text-xl text-silverR">
-            <Link className="hover:text-redD" to="/"> Home</Link>
-            <Link className="hover:text-redD" to="/classes"> Classes</Link>
-            <Link className="hover:text-redD" to="/events"> Events</Link>
+            <Link className={isActive('/')} to="/"> Home</Link>
+            <Link className={isActive('/')} to="/classes"> Classes</Link>
+            <Link className={isActive('/')} to="/events"> Events</Link>
           </nav>
         </div>
       </header>
       
       <div className="absolute inset-0 flex items-center justify-center">
-      <section className={`w-[80%]  bg-gradient-to-br from-DarkOrange to-redD h-[18.3rem] flex flex-col space-y-4 text-lg text-white fixed z-10 text-center items-center justify-center rounded-lg shadow-2xl  menu ${open ? 'toggle' : '' }`} onClick={handleToggle}>
+      <section className={`w-[80%]  bg-gradient-to-br from-DarkOrange to-redD h-[20rem] flex flex-col space-y-5 text-lg text-white fixed z-10 text-center items-center justify-center rounded-lg shadow-2xl  menu ${open ? 'toggle' : '' }`} onClick={handleToggle}>
         <Link className="link" to="/" >Home</Link>
         <Link className="link" to="/classes" >Classes</Link>
         <Link className="link" to="/events" >Events</Link>

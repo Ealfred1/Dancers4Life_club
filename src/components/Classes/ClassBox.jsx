@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const ClassBox = ({ id, style, image, description, date, duration, price }) => {
   return (
-    <div className="box w-full sm:w-1/2 flex flex-col items-center border border-8 border-silverR rounded-lg bg-white shadow-lg p-8 relative">
+    <div className="box w-full sm:w-2/3 flex flex-col items-center border border-8 border-silverR rounded-lg bg-white shadow-lg p-8 relative">
           <img src={image} alt="reload your browser" className="h-64 w-full object-cover rounded-lg" />
           <h3 className="text-2xl text-DarkOrange font-semibold py-4 tracking-wide">{style}</h3>
           <p className="p text-center">{description}</p>

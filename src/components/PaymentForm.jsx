@@ -61,6 +61,9 @@ const PaymentForm = ({ text, heading }) => {
       <div>
         
       </div>
+      <label className="block text-left">
+       Payment Method
+      </label>
       <div className="bg-white rounded-lg p-4 shadow-md">
         <CardElement
           className="p-2 border rounded-md focus:outline-none focus:border-blue-500"

@@ -19,7 +19,7 @@ const PurchaseTickets = () => {
   
 
   return (
-    <div>
+    <div className="px-4 mt-8">
       <Elements stripe={stripePromise}>
         <PaymentForm text='Checkout' heading={`Register for ${selectedDance} class`} />
       </Elements>
