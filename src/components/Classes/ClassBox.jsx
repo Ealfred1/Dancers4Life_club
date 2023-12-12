@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const ClassBox = ({ style, image, description, date, duration, price }) => {
+const ClassBox = ({ id, style, image, description, date, duration, price }) => {
   return (
     <div className="box w-full sm:w-1/2 flex flex-col items-center border border-8 border-silverR rounded-lg bg-white shadow-lg p-8 relative">
           <img src={image} alt="reload your browser" className="h-64 w-full object-cover rounded-lg" />
@@ -34,7 +34,7 @@ const ClassBox = ({ style, image, description, date, duration, price }) => {
          
          <div className="flex justify-between px-4 w-full gap-6 mt-4">
           <Link to={`/register?selectedDance=${encodeURIComponent(style)}&price=${encodeURIComponent(date)}`} className="bg-redD btn2">Register</Link>
-          <Link to="/payment" className="btn2">Payment</Link>
+          <Link to={`/payment/${id}?selectedDance=${encodeURIComponent(style)}`} className="btn2">Payment</Link>
          </div>
         </div>
   )

@@ -100,7 +100,11 @@
 }
 
 .btn-register {
-  @apply bg-redD w-full h-16 text-center rounded-lg text-silverR hover:opacity-80;
+  @apply bg-redD w-full h-20 text-center rounded-lg text-white hover:opacity-80;
+}
+
+.btn-register:disabled {
+  @apply opacity-50;
 }
 
 .btn2 {
@@ -108,7 +112,7 @@
 }
 
 .input {
-  @apply w-full h-12 bg-transparent border rounded-lg border-silverR outline-none focus:border-redD text-sm text-slate-600 px-5;
+  @apply w-full h-14 bg-transparent border rounded-lg border-silverR outline-none focus:border-redD text-sm text-slate-600 px-5;
 }
 
 }

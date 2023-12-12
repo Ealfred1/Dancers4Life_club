@@ -1,10 +1,26 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import eventData from '../../data/eventData.json';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import PaymentForm from '../PaymentForm'
 
+const stripePromise = loadStripe('pk_test_51OMIdFIhvoHTIvNwbQ5K04r7iFfLAyErFhNhQdJYHCqAGvBNTiBvenF2dPgYbFeskDnSI2wz7FE5z8HWF2ooG1NV00GoCwhnqi');
 const EventDetails = () => {
     const { eventId } = useParams();
     const event = eventData.find((event) => event.id === parseInt(eventId));
+    const [showPayment, setShowPayment] = useState(false)
+    const [ticketQuantity, setTicketQuantity] = useState(1)
+    
+    const handleTicketQuantityChange = (e) => {
+      setTicketQuantity(parseInt(e.target.value))
+    }
+  
+  const totalPrice = event ? event.price * ticketQuantity : 0;
+    
+    const handlePurchaseClick = () => {
+      setShowPayment(!showPayment)
+    }
     
     useEffect(() => {
      document.title = `Dancers4Life club | Event Details`
@@ -51,8 +67,13 @@ const EventDetails = () => {
                   </div>
                 </div>
          
-                <Link className="w-full h-16 py-4 px-5 text-center bg-redD text-lg grid place-content-center text-white rounded-xl">Purchase Tickets</Link>
-                </div>
+                <Link onClick={handlePurchaseClick} className="w-full h-16 py-4 px-5 text-center bg-redD text-lg grid place-content-center text-white rounded-xl">{ !showPayment ? 'Purchase Ticket' : 'Close Form'}</Link>
+                {showPayment && (
+                   <Elements stripe={stripePromise}>
+                     <PaymentForm text='Pay' />
+                  </Elements>
+                )}
+                 </div>
               </div>
          </div>
       </div>
@@ -61,3 +82,4 @@ const EventDetails = () => {
 }
 
 export default EventDetails
+

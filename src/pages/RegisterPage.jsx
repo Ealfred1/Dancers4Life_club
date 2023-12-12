@@ -95,7 +95,7 @@ const RegisterPage = () => {
           {error.email && <span className="error-message">{error.email}</span>}
         </div>
         <div className="flex flex-col space-y-4 mb-6">
-          <label className="label"> Dancing
+          <label className="p md:text-left"> Dancing
           Experience</label>
           <div className="flex space-x-3">
             <a
@@ -112,7 +112,7 @@ const RegisterPage = () => {
         </div> 
         
         <div className="flex flex-col space-y-4 mb-6">
-          <label className="label"> Dance Class </label>
+          <label className="p md:text-left"> Dance Class </label>
           <div className="flex space-x-3">
             <a
             onClick={() => handleClassClick('Ballroom')}
